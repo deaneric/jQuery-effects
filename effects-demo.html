@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jq-script.js"></script>
+  <title>JQuery Effects</title>
+</head>
+<body>
+ <!---QUESTION TAB--->
+  <div class="question-div">
+    Select type of effect you want?
+    <select id="sel_type" class="select-type">
+      <option disabled="disabled" selected="selected">Select</option>
+	  <option value="hide">Hide/Show</option>
+	  <option value="fade">Fade</option>
+	  <option value="slide">Slide</option>
+	  <option value="anime">Animate</option>
+    </select>	  
+  </div>
+   <!---HIDE/SHOW SECTION--->
+  <div class="main-container hide-container">
+    <h4>Hide/Show</h4>
+	<button type="button" class="button-design" id="btn_hide" value="hide">Hide</button>
+	<button type="button" class="button-design" id="btn_show" value="show">Show</button>
+	<button type="button" class="button-design" id="btn_toggle" value="toggle">Toggle</button>
+	<button type="button" class="button-design" id="btn_chain_hide" value="chain">Chaining</button>
+	<div class="content">
+	    <p>Hi this is some content on which effects will take place.<br>
+		The Effects will take place based on the button you have selected.<br>
+		External script file is being used.
+		</p>
+	</div>
+  </div>
+  <!---FADE SECTION--->
+  <div class="main-container fade-container">
+    <h4>Fade</h4>
+	<button type="button" class="button-design" id="btn_fade_in" value="fadein">Fade-In</button>
+	<button type="button" class="button-design" id="btn_fade_out" value="fadeout">Fade-Out</button>
+	<button type="button" class="button-design" id="btn_fade_toggle" value="toggle">Fade-Toggle</button>
+	<button type="button" class="button-design" id="btn_fade_to" value="fadeto">Fade-To</button>
+	<button type="button" class="button-design" id="btn_chain_fade" value="chain">Chaining</button>
+	<div class="content">
+	    <p>Hi this is some content on which effects will take place.<br>
+		The Effects will take place based on the button you have selected.<br>
+		External script file is being used.
+		</p>
+	</div>	
+  </div>
+  <!---SLIDE SECTION--->
+  <div class="main-container slide-container">
+    <h4>Slide</h4>	
+	<button type="button" class="button-design" id="btn_slide_up" value="slideup">Slide-Up</button>
+	<button type="button" class="button-design" id="btn_slide_down" value="slidedown">Slide-Down</button>
+	<button type="button" class="button-design" id="btn_slide_toggle" value="toggle">Slide-Toggle</button>
+	<div class="content">
+	    <p>Hi this is some content on which effects will take place.<br>
+		The Effects will take place based on the button you have selected.<br>
+		External script file is being used.
+		</p>
+	</div>
+  </div>
+  <!---ANIMATE SECTION--->
+  <div class="main-container anime-container">
+    <h4>Animate and Stop Effects</h4>
+	<button type="button" class="button-design" id="btn_anime_1" value="anime-1">Animate-1</button>
+	<button type="button" class="button-design" id="btn_anime_2" value="anime-2">Animate-2</button>
+	<button type="button" class="button-design" id="btn_anime_3" value="anime-3">Animate-3</button>
+	<button type="button" class="button-design" id="btn_stop" value="anime-stop" title="Stops current animation">Stop</button>
+	<button type="button" class="button-design" id="btn_stop_all" value="anime-stop-all" title="Stops all animation">Stop-All</button>
+	<button type="button" class="button-design" id="btn_stop_fnsh" value="anime-stop-finish" 
+	title="Rushes through current anime and stops">Stop-Finish</button>
+	<div class="content">
+	    <p>Hi this is some content on which effects will take place.<br>
+		The Effects will take place based on the button you have selected.<br>
+		External script file is being used.
+		</p>
+	</div>
+  </div>
+</body>
+</html>
